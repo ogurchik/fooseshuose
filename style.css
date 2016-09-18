@@ -1,4 +1,9 @@
 /*width working spice and contenta*/
+.base-class, .top-menu, .choose-category {
+  width: 67.14286%;
+  margin: auto;
+  display: flex; }
+
 .top-bar {
   background: #242424;
   color: #57c5a0;
@@ -20,6 +25,120 @@ html, body {
 
 .form-login {
   display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 30%; }
+
+.magnifear {
+  padding-right: 5%; }
+
+.login {
+  border-right: 1px solid #383838;
+  border-left: 1px solid #383838;
+  padding: 2%; }
+
+.top-menu {
+  justify-content: space-between;
+  box-sizing: border-box; }
+
+.top-menu__item {
+  border-right: 1px solid #eeeeee;
+  font-size: 16px;
+  padding-right: 6.30631%;
+  padding-left: 6.30631%;
+  padding-top: 25px;
+  padding-bottom: 25px; }
+
+.top-menu__item:first-child {
+  border-left: 1px solid #eeeeee; }
+
+.top-menu__rating, .top-menu__bascet {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  width: 50%; }
+
+.top-menu__bascet {
+  margin-left: 0; }
+
+.score {
+  display: inline-block;
+  background: #adadad;
+  font-weight: bold;
+  color: white;
+  margin-left: 7.77778%;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 4px; }
+
+.left-side, .right-side {
+  display: flex;
+  width: 19.14894%; }
+
+/*************************Banner *****************************************/
+.banner {
+  height: 260px;
+  width: 100%;
+  background: #ecebe6;
+  background-image: url(images/Banner.png);
+  background-position: 0 50%;
+  background-repeat: no-repeat; }
+
+.banner {
+  display: flex;
   align-items: center; }
+
+.banner-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 28.57143%;
+  margin-left: 52.85714%; }
+
+.banner-text__caption {
+  position: relative;
+  font-size: 40px;
+  width: 73.82199%;
+  margin-left: 23.56021%; }
+
+.banner-text__caption::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  content: "$145.99";
+  height: 100%;
+  width: 23.33333%;
+  background: #57c5a0;
+  font-size: 13px;
+  font-weight: bold;
+  color: white;
+  right: 110%; }
+
+.banner-text__description {
+  margin-top: 18px;
+  font-size: 20px;
+  width: 100%; }
+
+/******************* End Banner **************************************/
+/******************** Choose category ********************************/
+.choose-category {
+  align-items: center;
+  height: 90px;
+  color: white;
+  font-size: 22px; }
+
+.i_hate_fucking_pudding {
+  margin-left: 7.97872%; }
+
+.back-color-for-choose-category {
+  background: #2e2e2e;
+  width: 100%; }
+
+/*******************end choose category ****************************/
 
 /*# sourceMappingURL=style.css.map */
