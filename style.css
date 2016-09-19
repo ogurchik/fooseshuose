@@ -90,7 +90,8 @@ html, body {
 
 .banner {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  font-size: 1em; }
 
 .banner-text {
   display: flex;
@@ -101,10 +102,13 @@ html, body {
 
 .banner-text__caption {
   position: relative;
-  font-size: 40px;
+  font-size: 3.0769em;
   width: 73.82199%;
   margin-left: 23.56021%; }
 
+@media (max-width: 1200px) {
+  .banner-text__caption {
+    font-size: 2em; } }
 .banner-text__caption::before {
   display: flex;
   justify-content: center;
@@ -114,14 +118,14 @@ html, body {
   height: 100%;
   width: 23.33333%;
   background: #57c5a0;
-  font-size: 13px;
+  font-size: 0.325em;
   font-weight: bold;
   color: white;
   right: 110%; }
 
 .banner-text__description {
   margin-top: 18px;
-  font-size: 20px;
+  font-size: 1.53em;
   width: 100%; }
 
 /******************* End Banner **************************************/
@@ -130,15 +134,34 @@ html, body {
   align-items: center;
   height: 90px;
   color: white;
-  font-size: 22px; }
+  font-size: 1em; }
 
 .i_hate_fucking_pudding {
-  margin-left: 7.97872%; }
+  margin-left: 7.97872%;
+  font-size: 1.6923em; }
 
 .back-color-for-choose-category {
   background: #2e2e2e;
   width: 100%; }
 
+.switch-category {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15.71429%;
+  height: 60px;
+  background: #242424;
+  color: white;
+  font-size: 1.3846em;
+  margin-left: 2.12766%; }
+
+.first {
+  margin-left: 9.04255%;
+  background: white; }
+
+@media (max-width: 1200px) {
+  body {
+    font-size: 13px; } }
 /*******************end choose category ****************************/
 
 /*# sourceMappingURL=style.css.map */
