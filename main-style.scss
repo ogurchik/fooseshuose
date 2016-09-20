@@ -106,7 +106,7 @@ html, body {
 }
 .banner-text__caption {
 	position: relative;
-	font-size: 3.0769em;
+	font-size: 2.0769em;
 	width: 282/382*100%;
 	margin-left: 90/382*100%;
 }
@@ -131,7 +131,7 @@ html, body {
 }
 .banner-text__description {
 	margin-top: 18px;
-	font-size: 1.53em;
+	font-size: 1.13em;
 	width: 100%;
 }
 /******************* End Banner **************************************/
@@ -146,7 +146,7 @@ html, body {
 	font-size: 1em;
 }
 .i_hate_fucking_pudding {
-	margin-left: 75/940*100%;
+	margin-left: 60/940*100%;
     font-size: 1.6923em;
 }
 .back-color-for-choose-category {
@@ -157,16 +157,18 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 220/1400*100%;
+    width: 220/940*100%;
     height: 60px;
     background:#242424;
     color: white;
     font-size: 1.3846em;
     margin-left: 20/940*100%;
+    background-image: url(images/arrow-down.png);
+    background-repeat: no-repeat;
+    background-position: 190/225*100% 50%;
 }
 .first {
    margin-left: 85/940*100%;
-   background: white;
 }
 @media (max-width:1200px) {
     body {
@@ -174,3 +176,59 @@ html, body {
     }
 }
 /*******************end choose category ****************************/
+
+
+/***************** catalog output *****************************/
+.catalog {
+	@extend .base-class;
+	flex-direction: column;
+	margin-top: 30px;
+}
+.string-for-filtres-view {
+	width: 100%;
+	align-items: center;
+
+}
+.span-for-filter {
+	display:  inline-block;
+	
+}
+.string-for-filtres-view__caption-string {
+	@extend .span-for-filter;
+	font-size: 2em;
+}
+.rectangle-view {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 15/940*100%;
+	width: 30px;
+	height: 30px;
+	border: 1px solid black;
+}
+.list-view {
+	@extend .rectangle-view;
+}
+.string-for-filtres-view__navigation {
+	@extend .span-for-filter;
+	color: #bcb5a7;
+	font-size: 0.8em;
+	margin-left: 20/940*100%;
+
+}
+.string-for-filtres-view__filter {
+	@extend .span-for-filter;
+	color: #bcb5a7;
+	margin-left: 250/940*100%;
+}
+.filter-alphabet {
+	border: 1px solid #bcb5a7;
+	color: #bcb5a7;
+	margin-left: 20/940*100%;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+/*****************end  catalog output *****************************/
+
